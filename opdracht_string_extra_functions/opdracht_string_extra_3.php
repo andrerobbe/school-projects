@@ -12,6 +12,7 @@ $replaced = str_replace($lettertje, $cijfertje, $langsteWoord);
     <title>str3</title>
 </head>
 <body>
+  <h1>Oplossingen: string extra3</h1>
    <p><?= $replaced ?></p>    
 </body>
 </html>

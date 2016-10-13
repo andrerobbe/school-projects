@@ -8,11 +8,12 @@
 <head>
     <meta charset="UTF-8">
     <title>string1</title>
-    <p>fruit: <?= $fruit ?></p>
-    <p>chars: <?= $fruitLengte ?></p>
-    <p>positie o: <?= $fruitPositieO ?></p>
 </head>
 <body>
+    <h1>Oplossingen: string extra</h1>
+   <p>fruit: <?= $fruit ?></p>
+    <p>chars: <?= $fruitLengte ?></p>
+    <p>positie o: <?= $fruitPositieO ?></p>
     
 </body>
 </html>

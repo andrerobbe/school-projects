@@ -16,8 +16,6 @@ $dierenArray = array('panda', 'nijlpaard', 'cavia', 'muis', 'kip', 'varken', 'ge
 $voertuigen['landvoertuigen'] = array('fiets', 'auto');
 $voertuigen['watervoertuigen'] = array('boot', 'jetski');
 $voertuigen['luchtvoertuigen'] = array('vliegtuig', 'luchtbalon');
-
-var_dump($voertuigen)
     
 ?>
 
@@ -28,6 +26,8 @@ var_dump($voertuigen)
     <title>array basis 1</title>
 </head>
 <body>
+   <h1>Oplossingen: array basis 1</h1>
+   <?php var_dump($voertuigen) ?>
     
 </body>
 </html>

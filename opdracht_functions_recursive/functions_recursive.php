@@ -2,7 +2,6 @@
 $hoeveelheidgeld=10000;
 $JarenCounter=0;
 $MaxAantalJaren=10;
-berekenRentevoet();
 function berekenRentevoet()
 {
 	global $hoeveelheidgeld;
@@ -16,6 +15,8 @@ function berekenRentevoet()
 		berekenRentevoet();
 	}
 }
+
+berekenRentevoet();
 ?>
 <!DOCTYPE html>
 <html lang="en">

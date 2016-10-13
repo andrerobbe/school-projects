@@ -10,6 +10,7 @@
     <title>while loop 2</title>
 </head>
 <body>
+   <h1>Oplossingen: loop while2</h1>
     <ul>
         <?php $boodschapCount=0 ?>
         <?php while( isset( $boodschappen [ $boodschapCount ] ) ):  ?>

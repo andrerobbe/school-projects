@@ -37,6 +37,7 @@
 
 </head>
 <body>
+    <h1>Oplossingen: loop while</h1>
 
     <p><?= $getallenMetKomma ?></p>
 

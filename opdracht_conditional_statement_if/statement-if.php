@@ -45,6 +45,7 @@
     <title>if statement</title>
 </head>
 <body>
+  <h1>Oplossingen: if statement</h1>
    <p>Dag "<?php echo $getal ?>" is: <?= $day ?></p>
     
 </body>

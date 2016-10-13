@@ -4,9 +4,7 @@ $dierenArray = array('panda', 'nijlpaard', 'cavia', 'muis', 'kip', 'varken', 'ge
 asort($dierenArray);
 
 $zoogdieren = array ('aap','koe','kangeroe');
-$dierenlijst = array_merge($zoogdieren, $dierenArray)
-
-
+$dierenlijst = array_merge($zoogdieren, $dierenArray);
 
 $teZoekenDier = "panda";
 
@@ -29,6 +27,7 @@ else {
     <title>array functions</title>
 </head>
 <body>
+  <h1>Oplossingen: array functions 2</h1>
    <p>In de dieren array zitten <?php echo $arrayCount ?> dieren.</p>
    <p><?php echo $txt ?></p>
     

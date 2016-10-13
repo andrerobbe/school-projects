@@ -21,7 +21,8 @@
 <head> 
     <title>ifelse2</title>
 </head> 
-<body>   
+<body>
+   <h1>Oplossingen: ifelse statement 2</h1>   
     <p><?php echo $seconden ?> seconden =</p> 
   
     <ul> 

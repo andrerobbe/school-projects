@@ -41,6 +41,7 @@ $lowerCaseDay = strtolower($dayName);
     <title>switch</title>
 </head>
 <body>
+   <h1>Oplossingen: switch statement</h1>
     <p>nr: <?= $day ?></p>
     <p>day: <?= $lowerCaseDay ?></p>
     

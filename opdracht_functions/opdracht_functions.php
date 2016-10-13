@@ -1,10 +1,11 @@
 <?php
-function berekenSom($getal1,$getal2)
+
+function Som($getal1,$getal2)
 {
 	$som=$getal1+$getal2;
 	return $som;
 }
-function vermenigvuldig($factor1,$factor2)
+function factor($factor1,$factor2)
 {
 	$product=$factor1*$factor2;
 	return $product;
@@ -12,27 +13,29 @@ function vermenigvuldig($factor1,$factor2)
 function isEven($getal)
 {
 	if ($getal%2==0) {
-		$even="EVEN";
+		$even="even";
 	}
 	else{
-		$even="ONEVEN";
+		$even="oneven";
 	}
 	return $even;
 }
-function hoodflettersEnLengte($string)
+function capitalAndLen($str)
 {
 	$results = array();
-	$results[0]=strlen($string);
-	$results[1]=strtoupper($string);
+	$results[0]=strlen($str);
+	$results[1]=strtoupper($str);
 	return $results;
 }
-$number1=4;
-$number2=5;
-$string="opdracht";
-$som=berekenSom($number1,$number2);
-$product=vermenigvuldig($number1,$number2);
-$even=isEven($number1);
-$results=hoodflettersEnLengte($string);
+
+$nummer1=2;
+$nummer2=3;
+$str="test";
+$som=Som($nummer1,$nummer2);
+$product=factor($nummer1,$nummer2);
+$even=isEven($nummer1);
+$results=capitalAndLen($str);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,10 +44,11 @@ $results=hoodflettersEnLengte($string);
 	<title>Functions deel 1</title>
 </head>
 <body>
-	<p>Som is van <?=$number1?> en <?=$number2 ?> is <?=$som ?></p>
-	<p>Product is van <?=$number1?> en <?=$number2 ?> is <?=$product ?></p>
-	<p><?=$number1?> is  <?=$even ?></p>
-	<p>String in hoofletters <?=$results[1] ?></p>
-	<p>Lengte string <?=$results[0] ?></p>
+    <h1>Oplossingen: functions</h1>
+	<p>Som van <?=$nummer1?> en <?=$nummer2 ?>:<?=$som ?></p>
+	<p>Product van <?=$nummer1?> en <?=$nummer2 ?>: <?=$product ?></p>
+	<p><?=$nummer1?>: <?=$even ?></p>
+	<p>str in hoofletters: <?=$results[1] ?></p>
+	<p>Lengte str: <?=$results[0] ?></p>
 </body>
 </html>

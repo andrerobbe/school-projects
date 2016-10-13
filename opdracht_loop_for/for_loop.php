@@ -24,6 +24,7 @@
     </style>
 </head>
 <body>
+   <h1>Oplossingen: for lus</h1>
     <table>
         <?php for ( $i=0;$i<$rijen;++$i): ?>
             <tr>

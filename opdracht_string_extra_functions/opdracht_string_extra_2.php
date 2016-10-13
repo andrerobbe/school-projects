@@ -11,6 +11,7 @@ $fruitCapital = strtoupper($fruit);
     <title>str2</title>
 </head>
 <body>
+    <h1>Oplossingen: string extra2</h1>
    <p><?= $fruit ?></p>
    <p><?= $posLastA ?></p>
    <p><?= $fruitCapital ?></p>

@@ -17,6 +17,7 @@
     <title>if-else</title>
 </head>
 <body>
+  <h1>Oplossingen: ifelse statement</h1>
    <p>is <?= $jaartal ?> een schrikkelaar? <?php echo $schrikkeljaar ?></p>    
 </body>
 </html>

@@ -1,35 +1,25 @@
 <?php
 $pigHealth=5;
 $maxThrows=8;
-launchAngryBird();
-function calculateHit()
-{
+function calculateHit() {
 	global $pigHealth;
+    static $result;
 	$raakKans=rand(0,100);
-	if ($raakKans>=40) {
-		$raak=TRUE;
+	if ($raakKans >= 40) {
+		$raak = true;
 	}
 	else{
-		$raak=FALSE;
+		$raak = false;
 	}
-	if ($raak) {
-		$pigHealth--;
-		if ($pigHealth<2) {
-			echo "Raak Er is nog maar" . $pigHealth . "varken over <br>";
-		}
-		else{
-			echo "Raak Er zij nog maar" . $pigHealth . "varkens over <br>";
-		}
-		
+    
+	if ( $raak ) {
+		$pigHealth--;        
+		echo "Raak. Er zijn nog maar" . $pigHealth . "varkens over <br>";		
 	}
 	else{
-		if ($pigHealth<2) {
-			echo "Mis nog " . $pigHealth . "varken in het team <br>";
-		}
-		else{
-			echo "Mis nog " . $pigHealth . "varkens in het team <br>";
-		}
+		echo  "Mis. Nog " . $pigHealth . "varkens in het team <br>";
 	}
+    return $result;
 }
 function launchAngryBird()
 {
@@ -37,18 +27,20 @@ function launchAngryBird()
 	global $maxThrows;
 	static $aantalKeer;
 	if ($aantalKeer<$maxThrows && $pigHealth>0) {
+        calculateHit();
 		$aantalKeer++;
-		launchAngryBird();
-		calculateHit();
+        launchAngryBird();
 	}
-	if ($pigHealth===0 && $aantalKeer<=$maxThrows) {
-		echo "Gewonnen!<br>";
+	if ($pigHealth == 0 && $aantalKeer <= $maxThrows) {
+		echo "You won!<br>";
 	}
-	if ($pigHealth>0 && $aantalKeer===$maxThrows) {
-		echo "Verloren <br>";
+	if ($pigHealth > 0 && $aantalKeer >= $maxThrows) {
+		echo "You lost!<br>";
 	}
-	echo $aantalKeer;
 }
+
+$callback = 'launchAngryBird';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,6 +49,7 @@ function launchAngryBird()
 	<title>Angry Birds</title>
 </head>
 <body>
-	
+    <h1>Oplossingen: advanced functions 2</h1>
+    <?php echo $callback() ?>	
 </body>
 </html>

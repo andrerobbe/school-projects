@@ -15,8 +15,6 @@ $howManyOfEachChar = array();
 			$howManyOfEachChar[$letter]=1;
 		}
 	}
-var_dump($reversedArray); 
-var_dump ($howManyOfEachChar);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +23,9 @@ var_dump ($howManyOfEachChar);
 	<title>Foreach deel 1</title>
 </head>
 <body>
+    <h1>Oplossingen: foreach</h1>
+    <?php var_dump($reversedArray) ?>
+    <?php var_dump ($howManyOfEachChar); ?>
 	
 </body>
 </html>

@@ -13,6 +13,9 @@ foreach (count_chars($textlowwer, 1) as $i => $val) {
 	<title>Foreach deel 2</title>
 </head>
 <body>
+    <h1>
+        Oplossingen: foreach loop2
+    </h1>
 	
 </body>
 </html>

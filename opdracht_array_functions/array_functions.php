@@ -22,6 +22,7 @@ else {
     <title>array functions</title>
 </head>
 <body>
+  <h1>Oplossingen: array functions</h1>
    <p>In de dieren array zitten <?php echo $arrayCount ?> dieren.</p>
    <p><?php echo $txt ?></p>
     

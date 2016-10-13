@@ -14,8 +14,6 @@ $tel4 = $cijferArray[3] + $array2[3];
 $tel5 = $cijferArray[4] + $array2[4];
 
 
-var_dump($cijferArray);
-
 if ($result1 %2 != 0){
     echo 'result 1 = ' . $result1;
 }
@@ -40,6 +38,10 @@ if ($result5 %2 != 0){
     <title>array basis 2</title>
 </head>
 <body>
+   <h1>Oplossingen: array basis 2</h1>
+   
+   <?php var_dump($cijferArray) ?>
+   
     <p>optelling 1: <?= $tel1 ?></p>
     <p>optelling 2: <?= $tel2 ?></p>
     <p>optelling 3: <?= $tel3 ?></p>

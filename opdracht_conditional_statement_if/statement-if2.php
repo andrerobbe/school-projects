@@ -37,9 +37,9 @@
         $day = 'zondag'; 
     }
     
-    $day 	=	strtoupper( $day );
-    $PosLastA    =   strrpos( $day, 'A' );
-    $day 	        =	substr_replace( $day, 'a', $PosLastA, 1 );
+    $day = strtoupper( $day );
+    $PosLastA = strrpos( $day, 'A' );
+    $day =	substr_replace( $day, 'a', $PosLastA, 1 );
 
 ?>
 
@@ -50,6 +50,7 @@
     <title>if statement</title>
 </head>
 <body>
+  <h1>Oplossingen: if statement 2</h1>
    <p>Dag "<?php echo $getal ?>" is: <?= $day ?></p>
     
 </body>
