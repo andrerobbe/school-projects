@@ -9,7 +9,7 @@ function berekenRentevoet()
 	global $MaxAantalJaren;
 	if ($JarenCounter<$MaxAantalJaren) {
 		$JarenCounter++;
-		$Rente=$hoeveelheidgeld/12.5;
+		$Rente=$hoeveelheidgeld*0.08;
 		$hoeveelheidgeld=round($hoeveelheidgeld+$Rente);
 		echo "Na ". $JarenCounter ." jaar heeft hij " . $hoeveelheidgeld . "<br>";
 		berekenRentevoet();
@@ -25,5 +25,6 @@ berekenRentevoet();
 	<title>Recursive 1 en 2</title>
 </head>
 <body>
+    <h1>Oplossingen: recursive functions</h1>
 </body>
 </html>
