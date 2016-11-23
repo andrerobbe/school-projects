@@ -14,10 +14,10 @@ function calculateHit() {
     
 	if ( $raak ) {
 		$pigHealth--;        
-		echo "Raak. Er zijn nog maar" . $pigHealth . "varkens over <br>";		
+		echo "Raak. Er zijn nog maar " . $pigHealth . " varkens over <br><br>";		
 	}
 	else{
-		echo  "Mis. Nog " . $pigHealth . "varkens in het team <br>";
+		echo  "Mis. Nog " . $pigHealth . " varkens in het team <br><br>";
 	}
     return $result;
 }
@@ -31,10 +31,10 @@ function launchAngryBird()
 		$aantalKeer++;
         launchAngryBird();
 	}
-	if ($pigHealth == 0 && $aantalKeer <= $maxThrows) {
+	else if ($pigHealth == 0 && $aantalKeer <= $maxThrows) {
 		echo "You won!<br>";
 	}
-	if ($pigHealth > 0 && $aantalKeer >= $maxThrows) {
+	else if ($pigHealth > 0 && $aantalKeer >= $maxThrows) {
 		echo "You lost!<br>";
 	}
 }

@@ -68,23 +68,24 @@ if (isset($_GET["id"]))
  		$exists = true;
  	}
   }
+
+
   if (isset($_GET['search']))
 	{
-	$found = true;
  	$search_for = $_GET['search'];
  	foreach ($articles as $id => $artikel) 
  	{
- 		if (strpos($artikel["title"],$search_for) !==false && $found) 
+ 		if (strpos($artikel["title"],$search_for))
  		{	
 			$showOneArticle = true;
  			$articles = array($articles[$id] );
- 			$found = false;
+            break;
  		}
- 		if (strpos($artikel["txt"],$search_for) !==false && $found) 
+ 		if (strpos($artikel["txt"],$search_for)) 
  		{	
 			$showOneArticle=true;
  			$articles=array($articles[$id] );
- 			$found=false;
+            break;
  		}
 	}
 }
@@ -131,7 +132,6 @@ if (isset($_GET["id"]))
         ul {
             margin: 0 auto;
             padding: 0;
-            /* cfx */
         }
         
         .clearfix:after { 
@@ -169,7 +169,7 @@ if (isset($_GET["id"]))
 				</p>
 				<?php if (!$showOneArticle): ?>
 					<a href="get.php?id=<?php echo $id ?>">Lees meer</a>
-				<?php endif ?>
+				<?php endif; ?>
 			<?php endif ?>
 			</li>
 		<?php endforeach ?>
