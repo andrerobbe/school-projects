@@ -1,0 +1,9 @@
+    <main>
+        <?php foreach ( $artikels as $id => $artikel): ?>
+		<article class="cfx">
+			<h1><?= $artikel[ 'title' ] ?></h1>
+			<p><?= $artikel[ 'body' ] ?></p>
+			<p><?= $artikel[ 'tags' ] ?></p>
+		</article>
+	<?php endforeach ?>
+    </main>

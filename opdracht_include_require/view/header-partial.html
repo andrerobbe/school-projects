@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>include require</title>
+    <style>
+        body{ 
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            margin: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            position: absolute;
+        }
+        
+        article{
+            float: left;
+            border: 1px solid black;
+            margin: 100px 10px 0;
+            width: 30%; 
+        }
+        header { top: 0; }
+        footer { bottom: 0; }
+        .cfx::before, cfx::after{
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+        .cfx::after{
+            clear: both;   
+        }
+    </style>
+</head>
+<body>
+   <header>
+       <h1>Nieuws</h1>
+   </header>
+   
+  
+ 
+
+
